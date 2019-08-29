@@ -1,6 +1,13 @@
 from GroupProject import listTask
 from GroupProject import addTask
 from GroupProject import deleteTask
+
+f=open("user.txt","w")
+f.write("Hello! This is your current Task List: \n")
+f.write()
+f.close()
+
+
 menuExit = 0
 while menuExit == 0:
     user = int(input("Congratulations! You're running [YOUR NAME]'s Task List program.\nWhat would you like to do next?\n1.List all tasks.\n"
@@ -16,3 +23,4 @@ while menuExit == 0:
         deleteTask()
     else:
         print("INVALID ANSWER")
+

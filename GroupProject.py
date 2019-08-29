@@ -1,3 +1,6 @@
+
+
+
 list=["Cut the grass","Clean the fridge","Clean my room", "Wash clothes","Make dinner","Wash dishes"]
 
 def listTask():
@@ -14,6 +17,7 @@ def addTask():
         else:
             list.append(taskInput)
             add +=1
+            print(list)
 
 def deleteTask():
     listTask()
@@ -25,7 +29,9 @@ def deleteTask():
         elif int(deleteInput) > 0 and int(deleteInput) <= len(list):
             list.pop(int(deleteInput)-1)
             delete +=1
+            print(list)
         else:
             print("INVALID ANSWER")
 
 
+f=open("user.txt","w")
