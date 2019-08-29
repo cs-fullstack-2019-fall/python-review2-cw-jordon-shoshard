@@ -1,8 +1,9 @@
 list=["Cut the grass","Clean the fridge","Clean my room", "Wash clothes","Make dinner","Wash dishes"]
-
 def listTask():
-    for i in range (0, len(list)):
-        print(f"{i+1}.{list[i]}")
+    # for i in range (0, len(list)):
+        # print(f"{i+1}.{list[i]}")
+    print(list)
+    return list
 
 def addTask():
     listTask()
@@ -27,3 +28,4 @@ def deleteTask():
             delete +=1
         else:
             print("INVALID ANSWER")
+
