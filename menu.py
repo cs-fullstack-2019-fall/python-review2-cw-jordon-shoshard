@@ -1,6 +1,6 @@
 from GroupProject import listTask
 from GroupProject import addTask
-
+from GroupProject import deleteTask
 menuExit = 0
 while menuExit == 0:
     user = int(input("Congratulations! You're running [YOUR NAME]'s Task List program.\nWhat would you like to do next?\n1. List all tasks.\n"
