@@ -9,7 +9,7 @@ def listTask():
 def addTask():
     listTask()
     add = 0
-    while add == 0:
+    while add == 0: # !! : while input should be the condition taskInput.toLowerCase == x
         taskInput= input("Enter new task to add\nor Enter 'x' to go back: ")
         if taskInput == "x" or taskInput == "X":
             add +=1
@@ -21,11 +21,11 @@ def addTask():
 def deleteTask():
     listTask()
     delete = 0
-    while delete == 0:
+    while delete == 0: # !! : while input should be the condition taskInput.toLowerCase == x
         deleteInput=input("Which task would you like to delete?\nor Enter 'x' to go back: ")
         if deleteInput == "x" or deleteInput == "X":
             delete +=1
-        elif int(deleteInput) > 0 and int(deleteInput) <= len(list):
+        elif int(deleteInput) > 0 and int(deleteInput) <= len(list): # !! : deleteInput should be a string OR the prompt should suggest that it is an integer 
             list.pop(int(deleteInput)-1)
             delete +=1
             print(list)
