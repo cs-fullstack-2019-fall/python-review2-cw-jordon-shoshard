@@ -10,4 +10,9 @@ def addTask():
     taskInput= input("Enter new task to add:  ")
     list.append(taskInput)
 
-
+def deleteTask():
+    listTask()
+    deleteInput=input("Which task would you like to delete? ")
+    list.pop(int(deleteInput)-1)
+    listTask()
+deleteTask()
