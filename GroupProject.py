@@ -1,5 +1,4 @@
 list=["Cut the grass","Clean the fridge","Clean my room", "Wash clothes","Make dinner","Wash dishes"]
-f = oper(list.py,'r')
 
 def listTask():
     for i in range (0, len(list)):
