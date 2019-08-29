@@ -4,11 +4,10 @@ def listTask():
     for i in range (0, len(list)):
         print(f"{i+1}.{list[i]}")
 
+
 def addTask():
     listTask()
     taskInput= input("Enter new task to add:  ")
     list.append(taskInput)
-    print(list)
 
-addTask()
 
